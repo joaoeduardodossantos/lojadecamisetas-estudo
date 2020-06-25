@@ -1,0 +1,76 @@
+<html>
+<title>Loja de Camisetas</title>
+
+<body>
+    <table class: btn-default btn-default>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descricao</th>
+                <th>Quantidade</th>
+                <th>Preco</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+                <% @camisetas_por_nome.each do |produto| %>
+                    <tr>
+                        <th>
+                            <%= produto.nome %>
+                        </th>
+                        <th>
+                            <%= produto.descricao %>
+                        </th>
+                        <th>
+                            <%= produto.quantidade %>
+                        </th>
+                        <th>
+                            <%= produto.preco %>
+                        </th>
+                    </tr>
+                    <% end %>
+        </tbody>
+        
+        
+
+    </table>
+    <br />
+    <br />
+
+    <table class: btn-default btn-default>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descricao</th>
+                <th>Quantidade</th>
+                <th>Preco</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                
+                <% @camisetas_por_preco.each do |produto| %>
+                    <tr>
+                        <th>
+                            <%= produto.nome %>
+                        </th>
+                        <th>
+                            <%= produto.descricao %>
+                        </th>
+                        <th>
+                            <%= produto.quantidade %>
+                        </th>
+                        <th>
+                            <%= produto.preco %>
+                        </th>
+                    </tr>
+                    <% end %>
+        </tbody>
+        
+        
+
+    </table>
+</body>
+
+</html>
